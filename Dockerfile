@@ -19,7 +19,7 @@ COPY  requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy required file
-COPY Sample.pdf .
+COPY sample.pdf .
 COPY script.py .
 # Run program
 RUN python3 script.py
